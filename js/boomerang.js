@@ -14,7 +14,7 @@ boomerang.controller('MainControl', function($scope, $http, Config) {
     $scope.isNavCollapsed = true;
 
     $scope.events = {past:[] ,future:[]};
-    $http.get("/gdgfeed.php?id="+Config.id).
+    $http.get("http://bespokesystems.net/test/gdgfeed.php?id="+Config.id).
         success(function(data){
             var now = new Date();
             for(var i=data.length-1;i>=0;i--){
