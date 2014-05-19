@@ -149,7 +149,7 @@ boomerang.controller("EventsControl", function( $scope, $http, Config ) {
     $scope.$parent.activeTab = "events";
 
     $scope.events = {past:[] ,future:[]};
-    $http.get("/gdgfeed.php?id="+Config.id).
+    $http.get("http://bespokesystems.net/test/gdgfeed.php?id="+Config.id).
         success(function(data){
             var now = new Date();
             for(var i=data.length-1;i>=0;i--){
