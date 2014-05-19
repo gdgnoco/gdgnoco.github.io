@@ -122,7 +122,7 @@ boomerang.controller("NewsControl", function($scope, $http, $timeout, Config) {
                     via: {
                         name: 'Google+',
                         //url: item.url
-                        url: item.url.replace('https://plus.google.com/https://plus.google.com', 'https://plus.google.com');
+                        url: item.url.replace('https://plus.google.com/https://plus.google.com', 'https://plus.google.com')
                     },
                     body: html,
                     date: item.updated,
